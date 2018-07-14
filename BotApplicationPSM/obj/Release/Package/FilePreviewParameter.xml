@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="tcsinternmedeventz" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\demouser2\\documents\\visual\ studio\ 2017\\Projects\\BotApplicationPSM\\BotApplicationPSM\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\demouser2\\documents\\visual\ studio\ 2017\\Projects\\BotApplicationPSM\\BotApplicationPSM\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="BotDataEntities-Web.config Connection String" description="" value="metadata=res://*/Models.BotData.csdl|res://*/Models.BotData.ssdl|res://*/Models.BotData.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\BotData.mdf;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\demouser2\\documents\\visual\ studio\ 2017\\Projects\\BotApplicationPSM\\BotApplicationPSM\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BotDataEntities']/@connectionString" />
+  </parameter>
+  <parameter name="healthbot-Web.config Connection String" description="" value="Server=tcp:internsqlserver.database.windows.net,1433;Initial Catalog=healthbot;Persist Security Info=False;User ID=gnometraining;Password=tcsintern@1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\demouser2\\documents\\visual\ studio\ 2017\\Projects\\BotApplicationPSM\\BotApplicationPSM\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='healthbot']/@connectionString" />
+  </parameter>
+</parameters>
