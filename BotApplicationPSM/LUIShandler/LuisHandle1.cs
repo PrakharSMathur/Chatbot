@@ -9,7 +9,7 @@ using BotApplicationPSM.Dialogs;
 namespace BotApplicationPSM.LUIShandler
 {
     [Serializable]
-    [LuisModel("32293239-84cc-4ba8-b9e2-4009915a8dc1", "61ec1452421a490c9dec2c0962c1d2c6")]
+    [LuisModel("","")]
     public class LuisHandle1 : LuisDialog<object>
     {
        
