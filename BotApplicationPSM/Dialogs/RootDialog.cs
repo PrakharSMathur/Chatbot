@@ -8,7 +8,7 @@ using Microsoft.Bot.Builder.FormFlow;
 
 namespace BotApplicationPSM.Dialogs
 {
-    [LuisModel("3229323984cc4ba8b9e24009915a8dc1", "61ec1452421a490c9dec2c0962c1d2c6")]
+    [LuisModel("","")]
     [Serializable]
     
     public class RootDialog : LuisDialog<object>
@@ -68,11 +68,6 @@ namespace BotApplicationPSM.Dialogs
         {
             context.Call(new Eyecnf(), luisdone);                   //calls eye care booking dialog
         }
-        //[LuisIntent("Show_booking")]
-        //private async Task Show_booking(IDialogContext context, LuisResult result)
-        //{
-        //    //context.Call(new (), luisdone);                    //to add show booking
-        //}
         [LuisIntent("Show_booking")]
         private async Task Show_booking(IDialogContext context, LuisResult result)
         {
@@ -84,16 +79,12 @@ namespace BotApplicationPSM.Dialogs
 
         private async Task final(IDialogContext context, IAwaitable<BookingClass> result)
         {
-            //var res = await result;
-
             int temp;
             string name;
             string bgp;
             string pno;
             string newdate;
-            //context.PrivateConversationData.SetValue("Name", "Test1");
-            // context.PrivateConversationData.SetValue("Time", res.ToString());
-
+           
             context.PrivateConversationData.TryGetValue("pname", out name);
             context.PrivateConversationData.TryGetValue("p_age", out temp);
             context.PrivateConversationData.TryGetValue("bgroup", out bgp);
@@ -178,7 +169,7 @@ namespace BotApplicationPSM.Dialogs
         private async Task Thanks(IDialogContext context, LuisResult result)
         {
             context.PostAsync("It's been a pleasure to help you. Have a great day!");
-            context.Call(new RootDialog(),luisdone);                    //displays all events  in caraousel format
+            context.Call(new RootDialog(),luisdone);                   
         }
     }
 
