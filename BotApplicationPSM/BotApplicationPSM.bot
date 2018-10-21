@@ -1,12 +1,12 @@
 {
   "name": "BotApplicationPSM",
-  "secretKey": "",
+  "secretKey": "",  //enter key here
   "services": [
     {
-      "appId": "",
+      "appId": "", //enter microsoft app id here from azure portal
       "id": "http://localhost:3978/api/messages",
       "type": "endpoint",
-      "appPassword": "",
+      "appPassword": "", //enter microsoft app id password
       "endpoint": "http://localhost:3978/api/messages",
       "name": "BotApplicationPSM"
     }
